@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+DTD (living standard = HTML 5.2 above) html version declaration
+major update마다 많은 태그가 추가됐다. 근데 새 기능 사용하려면 major를 기다려야 돼서, 이제는 할 때마다 바로 업뎃 되게 바뀜
+JS(에크마 스크립트)도 마찬가지.
+-->
+<html lang="ko">
+  <head> <!--문서의 기본적인 정보. 브라우저에 보여지지 않는 정보만.-->
+    <meta charset="utf-8">
+    <!-- 레거시(utf 미지원) 브라우저에서는 한글이 깨질 수 있다 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 보는 화면이 뷰포트(보여지는) 넓이 맞추겠다는 선언 -->
+    <title>Document</title>
+    <!--
+    인라인에 style을 안 쓰는 가장 큰 이유: 가중치, css 우선순위 때문. 점수가 존재한다. 나중에 쓰인 것이 선택자 순위가 높다. 요소 선택자는 1점. 요소 선택자는 합산이 안 된다. 선택자를 이길 수 없다.
+    important 안 쓰는 게 좋음 (최후의 수단)
+    자식 선택자: article p (띄어쓰기) {}
+
+    article p {/*2*/}
+    p {/*1*/}
+    .txt {/*10*/}
+    #txt {/*100*/}
+    <p style="color:blue"></p> /*1000*/
+  -->
+  <!-- reset css 는 스타일을 싹 지우는 데에, normalize는 브라우저의 css를 통일하는 데에 의의. 취향에 맞춰 사용. -->
+  </head>
+  <body> <!--사용자들이 보는 정보-->
+    <article><!-- 어느 페이지에 들어가도 어색하지 않은, 독립적 요소 -->
+      <p>
+        더 편리해진 위니브에 오신 것을 환영합니다.
+        <!-- a와 button: a는 페이지 이동, button은 그 페이지 안에서 눌렀을 때 기능을 작동시킴. -->
+      </p>
+      <a href="#">weniv 로그인
+      </a>
+      <!-- 좌우 나누는 의미가 없을 때는 div를 써도 된다. 부모 영역에 좌우로 붙인다 -->
+      <div class="">
+        <a href="#">아이디</a>
+        <a href="#">비밀번호 찾기</a>
+      </div>
+      <div class="">
+        <a href="#">회원가입</a>
+      </div>
+    </article>
+  </body>
+</html>

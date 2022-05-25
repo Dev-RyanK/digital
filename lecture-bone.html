@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+      article {
+        /* 높이 되도록 놓지 않음 컨텐츠 넓이+보더+패딩. 계산하기 귀찮을 경우 box-sizing 사용*/
+          width: 350px; /*빼면 유동적*/
+          padding: 18px 15px 17px;
+          border: 1px solid #999;
+          border-radius: 5px;
+          margin: 100px auto 0;
+          box-sizing: border-box;
+      }
+
+      article::after { /*가상요소*/
+        display: block;
+        content: ''; /*after에 반드시 필요*/
+        clear: both; /*자기 앞 속성의 float을 left right 상관 없이 해제. "clear fix"*/
+      }
+
+      p {
+        margin-bottom: 16px;
+        font-weight: 400; /*굵기*/
+        font-size: 12px;
+        line-height: 15px; /*행간*/
+      }
+
+      .link-login {
+        margin-bottom: 17px;
+        display: block; /*a는 너비값이 안 먹어서 display 줘야 됨*/
+        /*width: 318px;
+        margin: 0 auto; */
+        padding: 13px 0 12px; /*0값이 좌우*/
+        background-color: #711bff;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px; /*소수점은 쓰지 않는다. 브라우저마다 다르기 때문*/
+        color: #fff;
+        text-align: center;
+        border-radius: 4px;
+      }
+
+      .link-login img {
+        width: 56px; /*높이는 너비에 따라서 자동으로 되므로 생략*/
+        vertical-align: top; /*글씨의 기준축을 잡아줌. 세밀한 조정은 margin을 더하거나 뺀다*/
+      }
+
+      .cont-links {
+        float: left; /*float을 주면 padding 위에 떠 버림. normal flow를 따라 결정된다. 위에서 아래로 붙이면서. float은 그 자체에서 사라져버림. 부모 요소가 인식하지 못하고 무시된다. clear를 주면 해결된다*/
+        background-image: url(#);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        padding-left: 20px;
+      }
+
+      .cont-links a,
+      .cont-links span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #767676
+      }
+
+      .cont-links+.cont-links { /*인접 형제 선택자. 앞 선택자의 바로 다음에 오는 요소에 부여한다*/
+        float: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <article>
+      <p class="txt">더 편리해진 위니브에 오신 것을 환영합니다.</p>
+      <a href="#" class="link-login"><img src="#" alt="weniv">로그인</a>
+      <div class="cont-links">
+        <a href="#">아이디</a>
+        <span>|</span>
+        <a href="#">비밀번호 찾기</a>
+      </div>
+      <div class="cont-links">
+        <a href="#">회원가입</a>
+      </div>
+    </article>
+  </body>
+</html>

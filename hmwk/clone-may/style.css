@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url(/font/gmksans_bold.woff);
+}
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url(/font/gmksans_light.woff);
+}
+
+@font-face {
+  font-family: 'tvnjoy';
+  src: url(/font/tvnjoy_medium.woff);
+}
+
+body {
+  font-family: 'GmarketSansLight';
+  background-color: #5B2386;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*title*/
+.quote {
+  font-family: 'tvnjoy';
+  color: #F5DF4D;
+  font-size: 36px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+
+/*main*/
+span {
+  font-family: 'GmarketSansBold';
+  font-size: 24px;
+}
+
+.huge
+{
+  font-family: 'GmarketSansBold';
+  font-size: 72px;
+  padding: 2px
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*text box*/
+input {
+  align-items: center;
+  font-family: 'GmarketSansLight';
+  width: 200px;
+}
+
+/*button*/
+button {
+  display: flex;
+  align-items: center;
+  font-family: 'GmarketSansBold';
+  font-size: 24px;
+  color: #5B2386;
+  background-color: #FCEE21;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 30px; /*동그란 테두리*/
+}

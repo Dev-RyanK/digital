@@ -13,6 +13,10 @@
   src: url(font/tvnjoy_medium.woff);
 }
 
+header {
+  text-align: center;
+}
+
 body {
   font-family: 'GmarketSansLight';
   background-color: #5B2386;
@@ -45,7 +49,7 @@ p .bold {
   font-size: 24px;
 }
 
-.huge
+strong
 {
   font-family: 'GmarketSansBold';
   font-size: 72px;

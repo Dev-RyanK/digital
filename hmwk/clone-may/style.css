@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'GmarketSansBold';
-  src: url(/font/gmksans_bold.woff);
+  src: url(font/gmksans_bold.woff);
 }
 
 @font-face {
   font-family: 'GmarketSansLight';
-  src: url(/font/gmksans_light.woff);
+  src: url(font/gmksans_light.woff);
 }
 
 @font-face {
   font-family: 'tvnjoy';
-  src: url(/font/tvnjoy_medium.woff);
+  src: url(font/tvnjoy_medium.woff);
 }
 
 body {
@@ -21,21 +21,26 @@ body {
   text-align: center;
 }
 
+h1 {
+  background-image: url(images/clock.png);
+  padding: 60px auto;
+  width: 220px;
+  repeat: none;
+}
+
 /*title*/
-.quote {
+q {
   font-family: 'tvnjoy';
   color: #F5DF4D;
   font-size: 36px;
 }
 
 .img {
-  display: flex;
-  align-items: center;
   margin: 50px;
 }
 
 /*main*/
-span {
+p .bold {
   font-family: 'GmarketSansBold';
   font-size: 24px;
 }
@@ -48,7 +53,6 @@ span {
 }
 
 .center {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -62,7 +66,6 @@ input {
 
 /*button*/
 button {
-  display: flex;
   align-items: center;
   font-family: 'GmarketSansBold';
   font-size: 24px;

@@ -65,7 +65,8 @@ strong
 input {
   align-items: center;
   font-family: 'GmarketSansLight';
-  width: 200px;
+  width: auto;
+  padding: 10px;
 }
 
 /*button*/

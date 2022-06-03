@@ -39,8 +39,10 @@ q {
   font-size: 36px;
 }
 
-.img {
-  margin: 50px;
+.image {
+  margin: auto;
+  width: 500px;
+  /* margin auto와 width 값을 주면 중앙 정렬 됨 */
 }
 
 /*main*/

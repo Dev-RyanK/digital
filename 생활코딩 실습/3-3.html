@@ -2,19 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>About JavaScript</title>
   </head>
   <body>
-    <h1><a href="index.html" target="_blank">This is a title.</a></h1>
+    <h1><a href="index.html" target="_blank">WEB</a></h1>
     <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    ">
-    <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    ">
+      nightDayHandler(this);">
+<!-- value 값 왜 검색까지 해야 되는지? -->
+<!-- 순서대로 읽는다. value==='night'일 때 배경색, 글자색, 버튼 글자 표시
+else일 때 배경색, 글자색, 버튼 글자 표시-->
+
     <div id="grid">
       <ol>
         <li><a href="1.html">HTML</a></li>
@@ -25,5 +25,7 @@
         <p>JS란 무엇인가?</p>
       </div>
     </div>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);">
   </body>
 </html>

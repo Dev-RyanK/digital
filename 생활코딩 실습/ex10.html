@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WEB1 - Javascript</title>
+  </head>
+  <body>
+    <h1>객체(Object)</h1>
+    <h2>객체 생성 Create</h2>
+    <script>
+      var coworkers={
+        "writer":"qquong",
+        "illustrator":"zolsae"
+      }
+      document.write("writer: "+coworkers.writer+"<br>");
+      document.write("illustrator: "+coworkers.illustrator+"<br>");
+      coworkers.fighter="mingu";
+      document.write("fighter: "+coworkers.fighter+"<br>");
+      coworkers["mental healer"]="nana"
+      document.write("mental healer: "+coworkers["mind healer"]+"<br>");
+    </script>
+    <h2>객체와 반복문 Iterate</h2>
+    <script>
+      for(var key in coworkers) {
+        document.write(key+"<br>"); //key 값과 줄바꿈을 하시오
+        document.write(coworkers[key]+"<br>"); //coworkers의 key에 [해당하는 데이터]를 불러 오고 줄바꿈을 하시오
+        document.write(key+':'+coworkers[key]+"<br>"); //'key:[key]' 꼴로 부르시오
+        //여기서 값이 나타나는 순서는 모든 데이터 순서 *3회가 아니라 각 데이터 *3회 *순서대로 이다. 데이터를 '순회'한다.
+      }
+    </script>
+    <h2>프로퍼티와 메서드Propety&Method</h2>
+    <!-- 객체에 소속된 함수 Method, 객체에 소속된 변수 Property -->
+    <script>
+      coworkers.showAll=function() {
+        for(var key in this) {
+          document.write(key+':'+coworkers[key]+'<br>');
+        }
+      }
+      coworkers.showAll(); //shwoAll 조차도 coworkers에 소속된 데이터이기 때문에 마찬가지로 화면에 표시된다.
+    </script>
+  </body>
+</html>

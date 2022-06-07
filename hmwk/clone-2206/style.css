@@ -48,3 +48,11 @@ input {
   border-radius: 20px;
   border: 0px none;
 }
+
+/* input:onclick {
+  border: none;
+} */
+
+input.default {
+  background-image: url(/img/magnifying_glass.png) 0 0 no-repeat;
+} /*이거 해결*/

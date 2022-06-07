@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>생활코딩 JS 요약</title>
+  </head>
+  <body>
+    <h1>생활코딩 JS: 19-37강(10/10)</h1>
+    <p>414-513p</p>
+
+    <h2>19.반복문 예고</h2>
+    <p>
+      반복문: 버튼을 클릭했을 때 모든 웹페이지에 있는 링크가 색깔이 바뀌도록 하려면, 만약 그게 1억개의 링크라면 style 값을 일일이 조정하는 건 불가능하다. 그것을 해결해주는 것이 <u>반복문</u>이다.
+    </p>
+    <h2>20.배열 Array</h2>
+    배열은 수납상자와 같다
+    배열의 형태: []
+    대괄호[]를 사용
+      <script>
+        var x =["a","b"]; // 변수 안에 배열의 형태가 담김
+        document.write(x[0]); //[0]은 첫번째 순서라는 뜻, index 0번=a
+        length
+        push
+      </script>
+
+    <h2>21.반복문 Loop</h2>
+    중괄호{}를 사용
+    while 은 불리언 데이터 타입 (true, false)
+    while 괄호 안의 내용이 true인 동안에 while문 안의 코드가 반복 실행
+    반복문이 언제 종료될 것인가 설정해줘야 함
+    <script>
+      document.write('a');
+      var i=0
+      while(i<3) {
+        document.write('b');
+        i=i+1;
+      }
+    </script>
+
+    <h2>22.배열과 반복문</h2>
+    배열: 순서대로 연관된 데이터를 잘 정돈
+    반복문: 순서대로 배열에 담긴 데이터를 하나씩 꺼내 자동화된 처리
+    <script>
+      var i=0;
+      while (i<x.length) {
+        document.write('<li>'+x[i]+'</li>');
+        i=i+1;
+      }
+    </script>
+
+    <h2>24-25.함수 Function</h2>
+    함수: 수납상자, 간단하며 강력
+    객체: 좀 더 큰 도구
+    연속되지 않으면 반복문을 쓸 수 없다. 그 자리에 함수를 넣는다
+    <script>
+      function two() {
+        document.write('a');
+        document.write('b');
+      }
+      two();
+      document.write('c');
+      document.write('d');
+      two();
+      document.write('c');
+      //two라는 함수를 two(); 자리에 실행한다
+    </script>
+
+    <h2>26.매개변수와 인자 Parameter&Argument</h2>
+
+  </body>
+</html>

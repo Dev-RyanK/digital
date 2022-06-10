@@ -69,7 +69,8 @@ strong
 {
   font-family: 'GmarketSansBold';
   font-size: 72px;
-  padding: 2px
+  padding: 2px;
+  margin: 50px 0;
 }
 
 .center {
@@ -81,8 +82,10 @@ strong
 input {
   align-items: center;
   font-family: 'GmarketSansLight';
-  width: auto;
   padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /*button*/
@@ -96,16 +99,13 @@ button {
   border-radius: 30px; /*동그란 테두리*/
 }
 
-button {
-  font-family: 'GmarketSansBold';
-  font-size: 24px;
-  color: #5B2386;
-  border: none;
-  padding: 10px 40px;
-  border-radius: 30px; /*동그란 테두리*/
+/* footer */
+/* img에는 클래스값 안 들어가나??*/
+.footer {
+  width: 100px;
+  margin-top: 50px;
 }
 
-/* footer */
 p .ccl {
   font-family: 'GmarketSansLight';
   font-size: 12px;

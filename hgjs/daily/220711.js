@@ -1,37 +1,22 @@
-// 최대값 구하기
-// function max(...items) {
-//     let output = items[0]
-//     for (const item of items) {
-//         if (output < item) { //item이 output보다 클 때
-//             output = item //item을 갈아치운다. 더 큰 게 나오지 않을 때까지
-//         }
-//     }
-//     return output
+// 매개변수와 리턴값을 갖는 함수의 구조
+// function 함수(매개변수, 매개변수, 매개변수) {
+//     문장
+//     문장
+//     return 리턴값
 // }
 
-// console.log(max(51, 12, 31, 103, 72))
 
-function min(first, ...rests) {
-    let output
-    let items
+// const f = function(x) {
+//     return x * x
+// }
 
-    if (Array.isArray(first)) {
-        output = first[0]
-        items = first
-    } else if (typeof first === 'number') {
-        output = first
-        items = rests
-    }
+// console.log(f(4))
+
+const max = function(1, 2, 3, 4) {
+    let output = array[0]
 }
 
-for (const item of items) {
-    if (output > item) {
-        output = item
-    }
-    return output
-}
+// 나머지 매개변수를 쓰는 이유: ...해서 array로 불러와 돌리는(한 바퀴) 데 의미가 있음.
+// item은 뭘 돌릴건지 선언. 배열인지 숫자인지 확인, 배열이면 돌아가고...
 
-console.log(`min(배열): ${min([52, 273, 32, 103, 275, 24, 57])}`)
-console.log(`min(숫자): ${min(52, 273, 32, 103, 275, 24, 57)}`)
-
-//뭔가 에러가 났는데 뭘까~
+//배열확인 Array.isArray / typeof는 object

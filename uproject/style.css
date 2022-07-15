@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@200;400&display=swap');
+
 /* root styling */
 
 :root {
   --light:#f8f9fa;
   --secondary:#adb5bd;
   --dark:#343a40;
-  --primary-color:#f15bb5;
+  --primary-color:#005463;
   --secondary-color:#2ec4b6;
   --border:#e9ecef;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -56,12 +58,13 @@ a {
 }
 
 .text-title {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: bold;
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 400;
 }
 
 .secondary-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-top: 10px;
 }
 
 .display-1 {
@@ -168,10 +171,11 @@ a {
 }
 
 .nav-brand {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   align-self: center;
   font-size: 32px;
+  padding-bottom: 10px;
 }
 
 .collapse {
@@ -182,7 +186,7 @@ a {
   font-size: 18px;
   margin: 12px;
   color: var(--dark);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .nav-link:hover {
@@ -191,9 +195,9 @@ a {
 
 .search-box {
   display: inline;
-  border-right: 1px solid var(--secondary);
-  padding-right: 12px;
-  margin-right: 10px;
+  border-left: 1px solid var(--secondary);
+  padding: 0 10px 0;
+  margin-left: 10px;
 }
 
 .toggle-button {
@@ -215,7 +219,7 @@ a {
 /* main section */
 
 #site-main {
-  margin-top: 8em;
+  margin-top: 1.5em;
 }
 
 #posts {
@@ -230,6 +234,18 @@ a {
   width: calc(33.3333% - 20px); /*for making 3 columns*/
   margin-bottom: 3em;
 }
+
+.write {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.4em;
+  padding: 16px;
+  color: var(--dark);
+  /* background-color: rgba(255, 238, 0, 0.222); */
+}
+
 /* close main section */
 
 /* footer */
@@ -253,6 +269,7 @@ a {
 }
 
 /* close footer */
+
 
 /* media query */
 

@@ -15,26 +15,26 @@ new Masonry("#posts .grid", { //띄어쓰기 주의ㅠㅠ
 new Swiper('.swiper-container', {
   direction : 'horizontal',
   loop : true,
-  slidesPerView : 5,
+  slidesPerView : 10,
   autoplay : {
     delay : 3000
   },
   //responsive breakpoints
   breakpoints : {
     '@0' : {
-      slidesPerView : 2
+      slidesPerView : 4
     },
     // 888px
     '@1.00' : {
-      slidesPerView : 3
+      slidesPerView : 5
     },
     // 1110px
     '@1.25' : {
-      slidesPerView : 4
+      slidesPerView : 6
     },
     // 1330px
     '@1.50' : {
-      slidesPerView : 5
+      slidesPerView : 6
     }
   }
 })

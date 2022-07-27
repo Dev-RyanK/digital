@@ -22,3 +22,7 @@ console.log(daysOfWeek[5]);
 // add more item to the array
 nonsense.push('JS');
 console.log(nonsense);
+
+const toBuy = ['potato', 'tomato', 'pizza'];
+toBuy.push('avocado');
+console.log(toBuy[2])

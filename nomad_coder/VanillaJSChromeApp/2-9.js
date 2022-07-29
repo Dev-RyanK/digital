@@ -20,3 +20,10 @@ toBuy[2] = 'water'; // get [second] index, and then update 'pizza' with 'water'
 console.log(toBuy);
 toBuy.push('one'); // add 'one' in the array
 console.log(toBuy);
+
+const hCrown = ['ksw', 'kmg', 'pcy'];
+console.log(hCrown);
+hCrown.push('jph');
+console.log(hCrown);
+hCrown[3] = 'lht';
+console.log(hCrown);

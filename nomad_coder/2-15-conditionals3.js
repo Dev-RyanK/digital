@@ -8,3 +8,13 @@ if(isNaN(age)) {
 } else {
   console.log('thank you for writing your age.')
 };
+
+if(isNaN(age) || age <0) {
+  console.log('please write positive number');
+} else if(age >= 18 && age <= 50) {
+  console.log('you can drink');
+} else if(age > 50 && age <= 80) {
+  console.log('you should excercise')
+} else if(age > 80) {
+  console.log('you can do whatever you want')
+}
